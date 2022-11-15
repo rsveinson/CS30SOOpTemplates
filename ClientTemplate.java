@@ -33,7 +33,7 @@ public class ClientTemplate {
         String nl = System.lineSeparator();
     
     // ***** objects *****
-    
+        ProgramInfo pInfo = new ProgramInfo("Ax Qy");
         //Scanner scanner = new Scanner(System.in);
         //NumberFormat currency = NumberFormat.getCurrencyInstance();
         
@@ -43,21 +43,11 @@ public class ClientTemplate {
         //PrintWriter fout = new PrintWriter(new BufferedWriter(new FileWriter("outfle.txt")));
     
     // ***** print banners *****
-    
-        banner = "*****************************" + nl;
-        banner += "Name:        Sveinson" + nl;
-        banner += "Class:       CS30S" + nl;
-        banner += "Assignment:  Ax Qy" + nl;
-        banner += "*****************************" + nl + nl;
         
-        System.out.println(banner);
+        System.out.println(pInfo.getBanner());
         //fout.print(banner);
     
     // ***** Get Input *****
-    
-        // prompt for input
-        // read input from keyboard
-        // echo input back to console window
     
     // ***** Main Processing *****
     
@@ -66,7 +56,7 @@ public class ClientTemplate {
     // ***** Closing Message *****
     
         System.out.println();
-        System.out.println("end of processing");
+        System.out.println(pInfo.getClosingMessage());
         //fout.println("End of Processing");
         
     // **** close io buffers *****
